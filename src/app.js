@@ -1,3 +1,5 @@
-module.exports = (() => {
-    console.log('NPM Starter Plugin Is Active!');
-});
+import {CompleteTransition} from './Actions/CompleteTransition';
+
+module.exports = {
+
+}

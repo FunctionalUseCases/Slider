@@ -1,8 +1,8 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-import Init from '../../src/Actions/Init.js';
-import StopAutoplay from '../../src/Actions/StopAutoplay.js';
+import {Init} from '../../src/Actions/Init.js';
+import {StopAutoplay} from '../../src/Actions/StopAutoplay.js';
 
 describe('StopAutoplay', function() {
     

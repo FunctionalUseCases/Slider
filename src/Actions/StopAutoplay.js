@@ -1,12 +1,13 @@
 import copy from '../Helpers/Copy.js';
 import StopAutoplayFailedException from '../Exceptions/StopAutoplayFailedException.js';
+import {State} from '../State';
 
-export default function(State) {
+export const StopAutoplay = function(slider) {
 
-    if (State === undefined) {
+    if (slider === undefined) {
         throw new StopAutoplayFailedException('Slider state is required');
     }
-    let state = copy(State);
+    let state = copy(slider);
     state.autoplay = false;
-    return state;
+    return State(state);
 }

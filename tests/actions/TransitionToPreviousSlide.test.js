@@ -1,8 +1,8 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-import Init from '../../src/Actions/Init.js';
-import TransitionToPreviousSlide from '../../src/Actions/TransitionToPreviousSlide';
+import {Init} from '../../src/Actions/Init';
+import {TransitionToPreviousSlide} from '../../src/Actions/TransitionToPreviousSlide';
 
 describe('TransitionToPreviousSlide', function() {
     describe('When can loop through, and only two slides', () => {

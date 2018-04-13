@@ -1,6 +1,6 @@
-import GetCurrentSlide from './GetCurrentSlide.js';
+import {GetCurrentSlide} from './GetCurrentSlide.js';
 
-export default function (Slide) {
+export const GetPreviousSlide = function (Slide) {
     if (Slide === undefined) {
         throw new Error('Getting previous slide requires state');
     }

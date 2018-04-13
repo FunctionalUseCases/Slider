@@ -1,6 +1,6 @@
-import GetCurrentSlide from './GetCurrentSlide.js';
+import {GetCurrentSlide} from './GetCurrentSlide.js';
 
-export default function(state) {
+export const GetSliderPositionAsPercentage = function(state) {
     let percentage = (GetCurrentSlide(state) - 1) * -100;
     return percentage + '%';
 }

@@ -1,9 +1,10 @@
 import copy from '../Helpers/Copy.js';
-import GetCurrentSlide from '../ActionHelper/GetCurrentSlide.js';
+import {GetCurrentSlide} from '../ActionHelper/GetCurrentSlide.js';
 import TransitionToFailedException from '../Exceptions/TransitionToFailedException.js';
 import CanLoopThrough from '../Specifications/CanLoopThrough.js';
+import {State} from '../State';
 
-export default function(Slide, slideToGet) {
+export const TransitionTo = (Slide, slideToGet) => {
 
     if (Slide === undefined) {
         throw new TransitionToFailedException('Slide state must be provided');
@@ -40,5 +41,5 @@ export default function(Slide, slideToGet) {
     slide.currentSlide = undefined;
     slide.transitionStartedAt = Date.now();
 
-    return slide;
+    return State(slide);
 }

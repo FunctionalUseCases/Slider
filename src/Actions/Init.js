@@ -1,7 +1,8 @@
 import InitiationFailedException from '../Exceptions/InitiationFailedException.js';
+import {State} from '../State';
 
 //@todo test autoplaySpeed
-export default function (numberOfSlides, slideDuration, autoplaySpeed, loopThrough) {
+export const Init = (numberOfSlides, slideDuration, autoplaySpeed, loopThrough) => {
 
     if (numberOfSlides === undefined) {
         throw new InitiationFailedException('numberOfSlides is required');
@@ -11,7 +12,7 @@ export default function (numberOfSlides, slideDuration, autoplaySpeed, loopThrou
         throw new InitiationFailedException('number of slides must >= 1');
     }
 
-    return {
+    return State({
         currentSlide: 1,
         numberOfSlides: numberOfSlides,
         transitionTo: undefined,
@@ -20,5 +21,5 @@ export default function (numberOfSlides, slideDuration, autoplaySpeed, loopThrou
         autoplaySpeed: autoplaySpeed || 4000,
         loopThrough: loopThrough || false,
         direction: undefined
-    }
+    });
 }
