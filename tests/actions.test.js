@@ -133,20 +133,6 @@ describe('Slide Instance:', function() {
         });
     });
 
-    describe('TransitionToPreviousSlide', function() {
-        it('should go to previous slide 1 -> 2', function() {
-            let slider = actions.Init(2);
-            slider = actions.TransitionToNextSlide(slider);
-            assert.equal(2, slider.transitionTo);
-        });
-        it('should go to pevious slide 1 -> 3 -> 2', function() {
-            let slider = actions.Init(3, 300, 1000, true);
-            slider = actions.TransitionToPreviousSlide(slider);
-            slider = actions.TransitionToPreviousSlide(slider);
-            assert.equal(2, slider.transitionTo);
-        });
-    });
-
     describe('CompleteTransition', function() {
         it('should fail if state is undefined', function() {
             assert.throws(function() {
