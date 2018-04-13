@@ -1,2 +1,1 @@
-# Slider
-A reusable and simple slider domain model
+# Slider Use Case Model
