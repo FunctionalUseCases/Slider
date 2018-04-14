@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gemmadlou/NPM-Package-Starter.git"
+    "url": "git+https://github.com/FunctionalUseCases/Slider.git"
   },
   "author": "Gemma Black <gblackuk@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gemmadlou/NPM-Package-Starter/issues"
+    "url": "https://github.com/FunctionalUseCases/Slider/issues"
   },
-  "homepage": "https://github.com/gemmadlou/NPM-Package-Starter#readme",
+  "homepage": "https://github.com/FunctionalUseCases/Slider#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-jest": "^22.1.0",
