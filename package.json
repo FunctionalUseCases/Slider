@@ -1,6 +1,6 @@
 {
   "name": "@functional-use-cases/slider",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/app.js",
   "scripts": {
