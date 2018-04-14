@@ -1,6 +1,6 @@
 {
-  "name": "npm-package-starter",
-  "version": "1.0.0",
+  "name": "@functional-use-cases/slider",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/app.js",
   "scripts": {
@@ -37,5 +37,8 @@
     "transform": {
       "^.+\\.js$": "babel-jest"
     }
+  },
+  "dependencies": {
+    "data.either": "^1.5.1"
   }
 }
