@@ -10,11 +10,12 @@ import { TransitionTo } from "./Actions/TransitionTo";
 import { TransitionToNextSlide } from "./Actions/TransitionToNextSlide";
 import { TransitionToPreviousSlide } from "./Actions/TransitionToPreviousSlide";
 import CompleteTransitionFailedException from "./Exceptions/CompleteTransitionFailedException";
-import Exception from "./Exceptions/Exception";
 import InitiationFailedException from "./Exceptions/InitiationFailedException";
 import StartAutoplayFailedException from "./Exceptions/StartAutoplayFailedException";
 import StopAutoplayFailedException from "./Exceptions/StopAutoplayFailedException";
 import TransitionToFailedException from "./Exceptions/TransitionToFailedException";
+import TransitionToNextSlideFailedException from "./Exceptions/TransitionToNextSlideFailedException";
+import TransitionToPreviousSlideFailedException from "./Exceptions/TransitionToPreviousSlideFailedException";
 
 module.exports = {
     // ActionHelpers
@@ -38,6 +39,6 @@ module.exports = {
     StartAutoplayFailedException: StartAutoplayFailedException,
     StopAutoplayFailedException: StopAutoplayFailedException,
     TransitionToFailedException: TransitionToFailedException,
-    TransitionToFailedException: TransitionToFailedException,
+    TransitionToNextSlideFailedException: TransitionToNextSlideFailedException,
     TransitionToPreviousSlideFailedException: TransitionToPreviousSlideFailedException
 }
